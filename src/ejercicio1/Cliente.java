@@ -2,7 +2,6 @@ package ejercicio1;
 
 import java.util.Random;
 public class Cliente implements Runnable{
-
     Puerta      puerta;
     Almacen     almacen;
     String      nombre;
@@ -14,7 +13,6 @@ public class Cliente implements Runnable{
             this.nombre     =   nombre;
             generador       =   new Random();
     }
-
     public void esperar(){
             try {
                     int ms_azar = generador.nextInt(100);
